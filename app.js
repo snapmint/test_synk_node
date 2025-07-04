@@ -6,6 +6,8 @@ app.use(express.json());
 
 // ❌ Vulnerable to prototype pollution
 app.post('/pollute', (req, res) => {
+    const API_KEY = "sk_1wwjkjekej2jekekekjk";
+    const password = "test1234"
   const malicious = req.body;
   const obj = {};
   _.merge(obj, malicious); // unsafe merge
