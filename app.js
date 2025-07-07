@@ -6,7 +6,7 @@ app.use(express.json());
 
 // ❌ Vulnerable to prototype pollution
 app.post('/pollute', (req, res) => {
-    const API_KEY = "sk_1wwjkjekej2jekekekjk";
+    const API_KEY = "sk_1wwjkjekej2jekekekjkcddd";
     const password = "test1234"
   const malicious = req.body;
   const obj = {};
